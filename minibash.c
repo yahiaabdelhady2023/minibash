@@ -2,6 +2,7 @@
 #include <readline/readline.h>
 #include <readline/history.h>
 #include <string.h>
+#include <stdlib.h>
 
 int main()
 {
