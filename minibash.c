@@ -16,6 +16,7 @@ int main()
                 {
                         printf("\n prompt ==>  %s", prompt);
                         add_history(prompt); // saves each line string, user can move through via arrow key or arrow key down
+                        free(prompt);        // very important do not forget to clear to avoid memory leakage
 
                         if (strcmp(prompt, target) == 0)
                         {
